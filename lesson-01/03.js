@@ -12,4 +12,5 @@ while (i<=20) {
     sum = sum +i;
     i =i+2;
 }
+
 console.log(sum);
