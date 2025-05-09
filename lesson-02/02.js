@@ -9,9 +9,13 @@
 
 let dice1 = Math.ceil(Math.random() * 6)// your code
 let dice2 = Math.ceil(Math.random() * 6)// your code
+
+// let dice1 = 3// your code
+// let dice2 = 3
+
 let isWinningDouble = false// your code
 
-if (dice1 >=3 && dice2 >= 3 && dice1 === dice2) {
+if (dice1 >=4 && dice2 >= 4 && dice1 === dice2) {
     isWinningDouble = true
 }
 
