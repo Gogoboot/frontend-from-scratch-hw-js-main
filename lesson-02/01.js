@@ -17,6 +17,6 @@ let isAccess
 
 // your code
 
-if ((isAdmin===true || isVerifiedUser===false) && (hasTemporaryPass===true || hasSpecialPermission===false)) {
+if ((isAdmin===false || isVerifiedUser===true) && ( hasSpecialPermission===true || hasTemporaryPass===false)) {
     isAccess = true
 }
