@@ -14,4 +14,4 @@ while (i<=10) {
     factorial = factorial * i;
     i++;
 }
-console.log(factorial);
+// console.log(factorial);
