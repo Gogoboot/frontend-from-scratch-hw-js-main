@@ -1,5 +1,8 @@
 // Разработайте функцию findLargest, которая принимает три числа и возвращает наибольшее из них.
 
+
+
+
 function findLargest(numberOne, numberTwo, numberThree) {
     let largest = numberOne;
     if (numberOne > numberTwo) {
@@ -13,9 +16,8 @@ function findLargest(numberOne, numberTwo, numberThree) {
     } else {
         largest = numberThree;
     }
-
-    // console.log(largest);
-
+    return largest;
 }
 
-// const result = findLargest(12, 30, 100);
+console.log(findLargest(2,3,1));
+
