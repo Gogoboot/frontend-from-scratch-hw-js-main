@@ -19,7 +19,7 @@ let element = "t";
 
 function includesElement(array, element) {
 
-    for (i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
 
         if (element === array[i]) {
             return true;
