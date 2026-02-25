@@ -11,4 +11,11 @@
 
 function truncate(str, maxLength) {
   // your code
+ // 1. Проверяем, превышает ли длина строки допустимый максимум
+  if (str.length > maxLength) {
+    // 2. Обрезаем строку от 0 до maxLength и приклеиваем многоточие
+    return str.slice(0, maxLength) + "...";
+  }
+  // 3. Если строка и так короткая, возвращаем её без изменений
+  return str;
 }
