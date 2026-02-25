@@ -6,4 +6,20 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-function capitalizeWords() {}
+function capitalizeWords(str) {
+   if (!str) return ""; // Проверка на пустую строку
+
+  let result = "";
+
+  for (let i = 0; i < str.length; i++) {
+    // Если это первый символ ИЛИ перед ним стоит пробел
+    if (i === 0 || str[i - 1] === " ") {
+      result += str[i].toUpperCase();
+    } else {
+      result += str[i];
+    }
+  }
+
+  return result;
+}
+
