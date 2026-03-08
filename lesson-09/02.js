@@ -36,8 +36,28 @@ startButton.addEventListener('click', () => {
   let counter = 3
 
   // your code
+    // Выводим первую цифру немедленно
+  countdownDisplay.textContent = counter;
+
+  timerId = setInterval(() => {
+    counter--;
+
+    if (counter > 0) {
+      countdownDisplay.textContent = counter;
+    } else {
+      // Когда дошли до 0 — пускаем ракету и очищаем таймер
+      countdownDisplay.textContent = '🚀';
+      clearInterval(timerId);
+      isTimerStarted = false;
+    }
+  }, 1000);
 })
 
 cancelButton.addEventListener('click', () => {
   // your code
+  if (isTimerStarted) {
+    clearInterval(timerId);
+    isTimerStarted = false;
+    countdownDisplay.textContent = 'Отменено';
+  }
 })
