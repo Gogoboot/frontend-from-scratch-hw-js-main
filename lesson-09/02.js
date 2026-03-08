@@ -33,9 +33,12 @@ let isTimerStarted = false;
 let timerId;
 
 startButton.addEventListener("click", () => {
-  let counter = 3;
+
   if (isTimerStarted) return;
   // your code
+  let counter = 3;
+  isTimerStarted = true;
+
   // Выводим первую цифру немедленно
   countdownDisplay.textContent = counter;
 
